@@ -6,9 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --open --mode development",
+    "start": "npm run server-init & webpack-dev-server --open --mode development",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix . --ext .jsx,.js"
+    "lint:fix": "eslint --fix . --ext .jsx,.js",
+    "server-init": "json-server initialState.json"
   },
   "keywords": [],
   "author": "",
